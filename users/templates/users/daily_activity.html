@@ -1,0 +1,120 @@
+{% extends 'users/base_generic.html' %}
+
+{% block content %}
+  <h2>Update Your Daily Activity</h2>
+
+  <p>Today's Date: {{ form.instance.date }}</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      <label for="task">Task:</label>
+      {{ form.task }}
+    </div>
+
+    <div>
+      <label for="news_count">Number of News Published on Website:</label>
+      {{ form.news_count }}
+    </div>
+
+    <div>
+      <label for="insta_followers">Number of News Published on Social Media:</label>
+      {{ form.insta_followers }}
+    </div>
+    
+    
+    <div>
+      <label for="news_count">Number of Subscription Done For Newsletter:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Pages Designed For Magazine:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Slides Prepared For Business Team:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Newsletter Prepared For Customer Via Email:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Connections Aquried On LinkedIn:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Connections Aquried On Twitter:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Connections Aquried On Instagram:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Connections Aquried On Facebook:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Professionals Prepared For The Issue:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Experts prepared for the issue:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Interview questionnaire prepared & sent:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of new addresses collected:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of new advertiseres found & shared:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of Cross-word puzzles prepared:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">New Plugins designed:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Number of News Published:</label>
+      {{ form.news_count }}
+    </div>
+    
+    <div>
+      <label for="news_count">Other tasks worked-out:</label>
+      {{ form.news_count }}
+    </div>
+    <button type="submit">Update Report</button>
+  </form>
+
+  {% if messages %}
+    <ul>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}
